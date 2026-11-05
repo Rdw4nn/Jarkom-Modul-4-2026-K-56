@@ -4,3 +4,5 @@
 | --- | ------------------------------ | ---------- | ---------- |
 | 1   | Sahira Bilqis Rivadito         | 5027251037 | CPT + VLSM |
 | 2   | Muhammmad Ridwan               | 5027251113 | GNS3 + CIDR|
+
+kita testing dulu bos
