@@ -1147,10 +1147,3 @@ Pada pengujian ping, nilai default TTL sistem operasi Windows/Packet Tracer umum
 Data empiris dari seluruh screenshot pengujian membuktikan bahwa degradasi TTL berjalan konsisten sesuai standar protokol IP (RFC 791).
 
 ---
-
-# KESIMPULAN
-
-1. **Efisiensi Pengalamatan VLSM**: Metode Variable Length Subnet Masking (VLSM) berhasil mengalokasikan 24 subnet (mencakup subnet LAN 2 host hingga 880 host serta link interkoneksi router /30) dari blok induk `192.239.0.0/16` secara teratur tanpa terjadi tabrakan alamat (*zero IP overlap*) maupun pemborosan ruang alamat.
-2. **Kestabilan Routing Statis**: Konfigurasi routing statis pada 13 Router Cisco 2811 berhasil menghubungkan seluruh cluster jaringan secara deterministik. Penggunaan *Route Summarization* pada router inti `Wired` berhasil memadatkan tabel routing tautan serial bawah menjadi prefix `/29` dan `/28`.
-3. **Keterjangkauan Penuh (Full Reachability)**: Seluruh pengujian ping dari host ujung barat (`Karl`) ke seluruh 20+ host jaringan menghasilkan packet loss 0%. Pengujian balik dari host ujung timur (`Mika`) juga berhasil melintasi seluruh segmen jaringan.
-4. **Verifikasi Jalur Simetris**: Traceroute dua arah membuktikan bahwa paket data melintasi 9 hop router secara teratur dan simetris, baik saat bergerak dari barat ke timur maupun sebaliknya.
