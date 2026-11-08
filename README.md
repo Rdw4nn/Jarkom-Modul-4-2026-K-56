@@ -6,7 +6,7 @@
 | 2   | Sahira Bilqis Rivadito         | 5027251037 | No 11-20   |
 
 ## LAPORAN RESMI MODUL 4
-### Praktikum Jaringan Komputer 2026 — Subnetting VLSM & Static Routing (Cisco Packet Tracer)
+### Subnetting VLSM & Static Routing (Cisco Packet Tracer)
 
 ---
 
