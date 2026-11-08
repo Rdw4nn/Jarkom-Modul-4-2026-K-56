@@ -6,7 +6,3 @@
 | 2   | Muhammmad Ridwan               | 5027251113 | GNS3 + CIDR|
 
 kita testing dulu bos
-
-BOSS INI BLOM DI UPDATE BOSS OAWOKWOKOWAW
-
-
