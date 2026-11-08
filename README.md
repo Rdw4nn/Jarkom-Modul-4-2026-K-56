@@ -630,36 +630,6 @@ Ciri khas routing statis pada topologi berstruktur hierarkis:
 2. **Next-Hop Menuju Stub / Leaf Subnets**: Router inti `Wired` mengarahkan paket ke router cabang spesifik yang membawahi subnet tujuan.
 3. **Deterministic Path**: Jalur transmisi paket dapat diprediksi secara tepat, meminimalkan overhead pemrosesan routing protocol dinamis, dan memaksimalkan keamanan jaringan.
 
-## 2. Matriks Jalur Transmisi Antar-Cluster
-
-```mermaid
-flowchart TD
-    subgraph Cluster_Kiri["Cluster Kiri"]
-        Karl_Lin["Karl & Lin (192.239.0.0/22)"] --> Freud["Router Freud"]
-        Masayuki_Juri["Masayuki & Juri (8.0/23 & 15.192/26)"] --> Blind["Router Blind"]
-        Akashic_Omni["Akashic & Tesla (4.0/22 & 16.32/29)"] --> Schumann["Router Schumann"]
-        Freud --> SW2["Switch2 (192.239.16.40/29)"]
-        Blind --> SW2
-        Schumann --> SW2
-    end
-
-    SW2 <==>|192.239.16.44| Wired{"Router Inti WIRED"}
-
-    subgraph Cluster_Atas["Cluster Atas & Kanan"]
-        Wired <==>|192.239.16.56/30| Cyberia["Router Cyberia"] --> JJ_MyuMyu["JJ & MyuMyu (14.0/25)"]
-        Wired <==>|192.239.16.60/30| Navi["Router Navi"] --> Navi_LAN["Ayde, Reika, Taro (12.0/23 & 15.64/26)"]
-    end
-
-    subgraph Rantai_Bawah["Rantai Serial Bawah"]
-        Wired <==>|192.239.16.64/30| Tachibana["Router Tachibana"]
-        Tachibana <==>|192.239.16.72/30| Deus["Router Deus"]
-        Deus <==>|192.239.16.76/30| Protocol["Router Protocol"]
-        Protocol <==>|192.239.16.80/30| Knights["Router Knights"]
-        Knights <==>|192.239.16.84/30| Phantoma["Router Phantoma"]
-        Phantoma <==>|192.239.16.88/30| Shibuya["Router Shibuya"] --> Lain_Mika["Lain & Mika (15.128/26)"]
-    end
-```
-
 ---
 
 # SOAL 12 | KONFIGURASI ROUTING STATIS ROUTER INTI (WIRED)
