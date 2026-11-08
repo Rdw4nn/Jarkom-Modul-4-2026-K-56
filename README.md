@@ -49,7 +49,7 @@ Kelompok: K56 | Prefix IP: `192.239.0.0/16`
 Sesuai prinsip efisiensi pengalamatan IPv4 menggunakan metode **VLSM (Variable Length Subnet Masking)**, pengalokasian blok subnet harus diurutkan secara menurun (*descending*) berdasarkan jumlah host yang dibutuhkan. Setiap subnet memerlukan tambahan alamat untuk *Network ID*, *Broadcast Address*, dan antarmuka *Default Gateway* router.
 
 Rumus penentuan ukuran blok alamat adalah:
-$$\text{Kapasitas Blok} = 2^n \ge (\text{Kebutuhan Host} + 1 \text{ Gateway} + 2 \text{ Network \& Broadcast})$$
+Kapasitas Blok = 2^n ≥ (Jumlah Host + Jumlah Interface Router + 2)
 
 | No | Label Subnet | Anggota Host / Interkoneksi | Kebutuhan Host Riil | Ukuran Blok Minimum | Netmask / Prefix |
 |---|---|---|---|---|---|
