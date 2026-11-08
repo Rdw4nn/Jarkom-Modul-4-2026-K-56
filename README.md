@@ -2,8 +2,8 @@
 
 | No  | Nama                           | NRP        | Pengerjaan |
 | --- | ------------------------------ | ---------- | ---------- |
-| 1   | Muhammmad Ridwan               | 5027251113 | No 1-10    |
-| 2   | Sahira Bilqis Rivadito         | 5027251037 | No 11-20   |
+| 1   | Muhammmad Ridwan               | 5027251113 | GNS + CIDR   |
+| 2   | Sahira Bilqis Rivadito         | 5027251037 | CPT + VLSM|
 
 ## LAPORAN RESMI MODUL 4
 ### Subnetting VLSM & Static Routing (Cisco Packet Tracer)
@@ -1116,4 +1116,5 @@ Pada pengujian ping, nilai default TTL sistem operasi Windows/Packet Tracer umum
 
 Data empiris dari seluruh screenshot pengujian membuktikan bahwa degradasi TTL berjalan konsisten sesuai standar protokol IP (RFC 791).
 
+---
 ---
